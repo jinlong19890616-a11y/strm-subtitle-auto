@@ -6,13 +6,11 @@ export default defineConfig({
   plugins: [
     vue(),
     federation({
-      name: 'SubtitleManualUpload',
+      name: 'StrmSubtitleAuto',
       filename: 'remoteEntry.js',
-      exposes: {
-        './Page': './src/components/Page.vue',
-        './Config': './src/components/Config.vue',
-        './AppPage': './src/components/AppPage.vue',
-      },
+      exposes: {},
+      /* This plugin has no custom Vue page; MoviePilot renders get_form(). */
+      /* Keep federation disabled for missing src/components files. */
       shared: {
         vue: {
           requiredVersion: false,

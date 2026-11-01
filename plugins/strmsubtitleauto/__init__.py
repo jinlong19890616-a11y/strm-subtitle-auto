@@ -342,10 +342,6 @@ class StrmSubtitleAuto(_PluginBase):
 
         return get_agent_tools()
 
-    @staticmethod
-    def get_render_mode() -> Tuple[str, str]:
-        return "vue", "dist/assets"
-
     def get_api(self) -> List[Dict[str, Any]]:
         return build_api_routes(self)
 
