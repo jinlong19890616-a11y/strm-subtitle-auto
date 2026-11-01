@@ -1,0 +1,15 @@
+{
+  "strmsubtitleauto": {
+    "name": "STRM 中文字幕自动处理",
+    "description": "监听新入库事件，等待 Symedia 生成 STRM，并在 STRM 旁边自动写入中文字幕外挂。",
+    "labels": "字幕,STRM",
+    "version": "0.1.0",
+    "author": "jinlong19890616-a11y",
+    "level": 1,
+    "v2": true,
+    "v3": false,
+    "history": {
+      "0.1.0": "首个事件驱动版本：等待 STRM 生成并写入同目录中文字幕"
+    }
+  }
+}
