@@ -2,7 +2,7 @@ import importlib.util
 import unittest
 from pathlib import Path
 
-p = Path(__file__).parents[1] / 'config' / 'config_schema.py'
+p = Path(__file__).parents[1] / 'plugins' / 'strmsubtitleauto' / 'config' / 'config_schema.py'
 # Full plugin imports MoviePilot runtime; syntax/import smoke is tested separately.
 class TestSource(unittest.TestCase):
     def test_source_has_strm_defaults(self):
